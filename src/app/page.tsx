@@ -95,7 +95,7 @@ export default function Home() {
     setCopyData(data);   
   };   
 
-  const countDuplicates = (arr: number[][]) => {     
+  const countDuplicates = () => {     
     let double = 0;     
     for (let index = 0; index < data.length; index++) {       
       if (data[index][0] === data[index][1]) {         
@@ -105,7 +105,7 @@ export default function Home() {
     return double;   
   };    
 
-  const duplicateCount = countDuplicates(data);   
+  const duplicateCount = countDuplicates();   
 
   const handleInputChange = (e: any) => {     
     setInputValue(e.target.value);   
