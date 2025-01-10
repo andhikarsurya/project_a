@@ -107,7 +107,7 @@ export default function Home() {
 
   const duplicateCount = countDuplicates();   
 
-  const handleInputChange = (e: any) => {     
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {     
     setInputValue(e.target.value);   
   };   
 
@@ -140,7 +140,7 @@ export default function Home() {
             </div>           
           </div>         
         ))}       
-      </div>       
+      </div>        
 
       <div className="flex justify-center gap-[1rem]">         
         <div>           
@@ -174,7 +174,7 @@ export default function Home() {
             Reset           
           </button>         
         </div>       
-      </div>       
+      </div>        
 
       <div>         
         <input           
@@ -185,7 +185,7 @@ export default function Home() {
           value={inputValue}           
           onChange={handleInputChange}         
         />       
-      </div>       
+      </div>        
 
       <div>         
         <button           
